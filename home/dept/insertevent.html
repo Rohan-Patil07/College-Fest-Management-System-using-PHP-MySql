@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V4</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form" action="insertevent.php" method="post">
+				<span class="contact100-form-title">
+					Event 
+				</span>
+
+				<div class="wrap-input100 validate-input" data-validate="Event Name is required">
+					<span class="label-input100">Event name</span>
+					<input class="input100" type="text" name="ename" placeholder="Enter Event Name">
+					<span class="focus-input100"></span>
+				</div>
+				
+				<div class="wrap-input100 validate-input" data-validate="Event ID is required">
+					<span class="label-input100">Event ID</span>
+					<input class="input100" type="number" name="eid" placeholder="Enter Event ID">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate = "Description is required">
+					<span class="label-input100">Description</span>
+					<textarea class="input100" name="desc" placeholder="Describe here..."></textarea>
+					<span class="focus-input100"></span>
+				</div>
+				
+				
+				<div class="wrap-input100 validate-input" data-validate="Co-ordinator ID is required">
+					<span class="label-input100">Co-Ordinator ID</span>
+					<input class="input100" type="number" name="cid" placeholder="Enter Co-ordinator ID">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate="Co-ordinator Name is required">
+					<span class="label-input100">Co-Ordinator name</span>
+					<input class="input100" type="text" name="cname" placeholder="Enter Co-ordinator Name">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate="Co-ordinator Phno is required">
+					<span class="label-input100">Co-Ordinator Phone no.</span>
+					<input class="input100" type="number" name="phno" placeholder="Enter Co-ordinator Phno">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate="Co-ordinator E-mail is required">
+					<span class="label-input100">Co-Ordinator Email</span>
+					<input class="input100" type="text" name="email" placeholder="Enter Co-ordinator Mail-ID">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate="Event Location is required">
+					<span class="label-input100">Location</span>
+					<input class="input100" type="text" name="loc" placeholder="Enter event location">
+					<span class="focus-input100"></span>
+				</div><div class="wrap-input100 validate-input" data-validate="Event Starting Time">
+					<span class="label-input100">Start Time</span>
+					<input class="input100" type="text" name="stime" placeholder="Enter Starting Time">
+					<span class="focus-input100"></span>
+				</div><div class="wrap-input100 validate-input" data-validate="Event Endint Time">
+					<span class="label-input100">End Time</span>
+					<input class="input100" type="text" name="etime" placeholder="Enter Ending Time">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate="Event Entry Fee is required">
+					<span class="label-input100">Entry Fee</span>
+					<input class="input100" type="number" name="fee" placeholder="RS.">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate="Price amount is required">
+					<span class="label-input100">Price Amount</span>
+					<input class="input100" type="number" name="first" placeholder="1st Place">
+					<span class="focus-input100"></span>
+					<input class="input100" type="number" name="second" placeholder="2nd Place">
+					<span class="focus-input100"></span>
+					<input class="input100" type="number" name="third" placeholder="3rd place">
+					<span class="focus-input100"></span>
+				</div>
+
+
+				
+
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button class="contact100-form-btn">
+							<span>
+								Submit
+								<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+							</span>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>
